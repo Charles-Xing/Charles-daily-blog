@@ -37,7 +37,7 @@ export default function Posts({ posts = [] }: { posts: SanityDocument[] }) {
                     </p>
                   </div>
                   <div className="flex flex-col items-center md:flex-row gap-y-2 md:gap-x-2">
-                    {post.categories.map((category) => (
+                    {post.categories.map((category:any) => (
                       <div
                         className="bg-[#F2780D] text-center text-black px-3 py-1 rounded-full text-sm font-semibold"
                         key={post._id}
